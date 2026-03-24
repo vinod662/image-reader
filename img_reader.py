@@ -9,7 +9,6 @@ app = Flask(__name__)
 def read_image():
     data = request.get_json()
     image_url = data.get('image_url')
-
     try:
         # Fetch image from URL
         response = requests.get(image_url)
